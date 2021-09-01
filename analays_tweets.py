@@ -17,7 +17,7 @@ def filter_by_truck(tweets, mode_from, mode_DB):
     # if 'bus' in text:
     words_re = re.compile("|".join(list_of_words))
     if words_re.search(text.lower()):
-        print("--------------")
+        print("----------------")
         index_of_relevant_tweets = index_of_relevant_tweets + 1
         #print("success", index_of_relevant_tweets)
         dict_after_truck[index_of_relevant_tweets] = tweets
